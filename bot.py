@@ -11,6 +11,10 @@ consumer_secret = os.environ.get('consumer_secret')
 access_token = os.environ.get('access_token')
 access_token_secret = os.environ.get('access_token_secret')
 
+# add cltk models to path
+rel_path = os.path.join('/app/cltk_data/latin/model/latin_models_cltk/')
+path = os.path.expanduser(rel_path)
+
 def make_str():
 	# create whatever sentences here
 
